@@ -76,7 +76,7 @@ model.compile(loss="mean_absolute_error", optimizer="adam",metrics=['mean_absolu
 model.summary()
 
 
-history = model.fit(X_train, Y_train, epochs=10, batch_size=5, validation_split=0.1,shuffle=True,verbose=2)
+history = model.fit(X_train, Y_train, epochs=10, batch_size=5,shuffle=True,verbose=2)
 
 end_time=time.time()
 
